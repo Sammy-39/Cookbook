@@ -89,7 +89,7 @@ homeListItem.innerHTML = `<a class="nav-link mr-2" href="../index.html"> Home </
 
 var aboutListItem = createNewElement("li")
 setAttributes(aboutListItem,{ class: "navbar-nav" })
-aboutListItem.innerHTML = `<a class="nav-link" href="#"> About </a>`
+aboutListItem.innerHTML = `<a class="nav-link" href="../about.html"> About </a>`
 
 //to create card-deck container
 var cardDeckContainer = createNewElement("div")

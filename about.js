@@ -75,11 +75,11 @@ setAttributes(navUListElem,{ class: "navbar-nav" })
 //to create list items
 var homeListItem = createNewElement("li")
 setAttributes(homeListItem,{ class: "nav-item" })
-homeListItem.innerHTML = `<a class="nav-link mr-2" href="#"> Home </a>`
+homeListItem.innerHTML = `<a class="nav-link mr-2" href="index.html"> Home </a>`
 
 var aboutListItem = createNewElement("li")
 setAttributes(aboutListItem,{ class: "navbar-nav" })
-aboutListItem.innerHTML = `<a class="nav-link" href="about.html"> About </a>`
+aboutListItem.innerHTML = `<a class="nav-link" href="#"> About </a>`
 
 
 //to create top-bar conatiner
@@ -89,96 +89,7 @@ setAttributes(topBarContainer,{ class:"top-bar" })
 //to create title element
 var titleElem = createNewElement("p")
 setAttributes(titleElem,{ class:"title mt-5" })
-titleElem.innerText = "Eat Healthy and Light"
-
-//to create subtitle element
-var subtitleElem = createNewElement("p")
-setAttributes(subtitleElem,{ class:"subtitle" })
-subtitleElem.innerText = "Quality Recipes"
-
-//to create body container
-var bodyContainer = createNewElement("div")
-setAttributes(bodyContainer,{ 
-    class:"body col-10 col-sm-10 col-md-8 col-lg-8 col-xl-8 offset-1 offset-sm-1 offset-md-2 offset-lg-2 offset-xl-2 p-5"
-})
-
-//to create menu button elements
-var meatButtonElem = createNewElement("button")
-setAttributes(meatButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/meat.html"` 
-})
-meatButtonElem.innerText = "Meat"
-
-var fishButtonElem = createNewElement("button")
-setAttributes(fishButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/Vegan.html"`  
-})
-fishButtonElem.innerText = "Vegan"
-
-var veganButtonElem = createNewElement("button")
-setAttributes(veganButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/fish.html"`  
-})
-veganButtonElem.innerText = "Fish"
-
-var fruitsButtonElem = createNewElement("button")
-setAttributes(fruitsButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/fruits.html"`  
-})
-fruitsButtonElem.innerText = "Fruits"
-
-var indianButtonElem = createNewElement("button")
-setAttributes(indianButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/indian.html"`  
-})
-indianButtonElem.innerText = "Indian"
-
-var italianButtonElem = createNewElement("button")
-setAttributes(italianButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/italian.html"`  
-})
-italianButtonElem.innerText = "Italian"
-
-var chineseButtonElem = createNewElement("button")
-setAttributes(chineseButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/chinese.html"`  
-})
-chineseButtonElem.innerText = "Chinese"
-
-var continentalButtonElem = createNewElement("button")
-setAttributes(continentalButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/continental.html"`  
-})
-continentalButtonElem.innerText = "Continental"
-
-var dairyButtonElem = createNewElement("button")
-setAttributes(dairyButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/dairy.html"`  
-})
-dairyButtonElem.innerText = "Dairy"
-
-var icecreamButtonElem = createNewElement("button")
-setAttributes(icecreamButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/icecream.html"`  
-})
-icecreamButtonElem.innerText = "Ice-Cream"
-
-var chocolateButtonElem = createNewElement("button")
-setAttributes(chocolateButtonElem,{ 
-    class:"btn mb-3",
-    onclick: `location.href="components/chocolate.html"`  
-})
-chocolateButtonElem.innerText = "Chocolate"
+titleElem.innerText = "About Me"
 
 
 //to create footer containers and its childs link elements
@@ -199,11 +110,10 @@ setAttributes(instagramLinkElem, { href: "#" })
 instagramLinkElem.innerHTML = `<i class="fab fa-instagram">`
 
 
-//to append main container to the body
 document.body.append(mainContainer)
 
 //to append navbar, topbar, body, footer containers to main container
-mainContainer.append(navContainer,topBarContainer,bodyContainer,footerContainer)
+mainContainer.append(navContainer, topBarContainer, footerContainer)
 
 //to append nav container and its child the main container
 navContainer.append(navElem)
@@ -214,12 +124,7 @@ navListContainer.append(navUListElem)
 navUListElem.append(homeListItem,aboutListItem)
 
 //to append title and subtitle elements to topbar container
-topBarContainer.append(titleElem,subtitleElem)
-
-//to append menu button elements to body container
-bodyContainer.append(meatButtonElem,fishButtonElem,veganButtonElem,fruitsButtonElem,
-    indianButtonElem,italianButtonElem,chineseButtonElem,continentalButtonElem, 
-    dairyButtonElem, icecreamButtonElem, chocolateButtonElem)
+topBarContainer.append(titleElem)
 
 //to append link elements to footer container
 footerContainer.append(twitterLinkElem,facebookLinkElem,instagramLinkElem)
