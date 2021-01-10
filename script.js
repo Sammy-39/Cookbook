@@ -180,6 +180,8 @@ setAttributes(chocolateButtonElem,{
 })
 chocolateButtonElem.innerText = "Chocolate"
 
+
+//to create footer containers and its childs link elements
 var footerContainer = createNewElement("footer")
 setAttributes(footerContainer,{ class: "footer col-6 offset-3"} )
 
