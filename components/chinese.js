@@ -161,7 +161,7 @@ getRecipeData().then((recipeData)=>{
         //to create modal box with recipe details
         modalContainerList.push(createNewElement("div"))
         setAttributes(modalContainerList[i],{
-            class: "modal fade", id: "recipeDetailsModal", tabindex: "-1",
+            class: "modal fade", id: "recipeDetailsModal", tabindex: "-1", "data-keyboard": "false", "data-backdrop": "static",
             role: "dialog", "aria-labelledby": "recipeDetailsModal", "aria-hidden":"true"
         })
 

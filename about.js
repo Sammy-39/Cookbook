@@ -30,7 +30,7 @@ setAttributes(navElem,{ class: "navbar navbar-expand-lg navbar-expand-md navbar-
 var navBrandElem = createNewElement("a")
 setAttributes(navBrandElem,{ 
     class: "navbar-brand navbar-brand-text",
-    href: "#" 
+    href: "index.html" 
 })
 
 //to create nav-brand image element
@@ -79,7 +79,7 @@ homeListItem.innerHTML = `<a class="nav-link mr-2" href="index.html"> Home </a>`
 
 var aboutListItem = createNewElement("li")
 setAttributes(aboutListItem,{ class: "navbar-nav" })
-aboutListItem.innerHTML = `<a class="nav-link" href="#"> About </a>`
+aboutListItem.innerHTML = `<a class="nav-link" href="about.html"> About </a>`
 
 
 //to create top-bar conatiner
